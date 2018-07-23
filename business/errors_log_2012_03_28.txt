@@ -1,0 +1,15 @@
+   |  Date:  2012-03-28 11:51:31 -> ERREUR
+<b>Erreur N° :</b> 8
+<b>Texte :</b> A non well formed numeric value encountered
+<b>Fichier :</b> /homepages/40/d397728704/htdocs/public_html/administration/activ_jour.php, à la ligne 20, le 28/03/2012 à 11:51:31
+<b>Backtrace :</b>
+date("Y-m-d", "2012-03-28 11:51:31") # line   20, file /homepages/40/d397728704/htdocs/public_html/administration/activ_jour.php
+
+
+   |  Date:  2012-03-28 12:18:44 -> ERREUR
+<b>Erreur N° :</b> 8
+<b>Texte :</b> Undefined index:  cComi
+<b>Fichier :</b> /homepages/40/d397728704/htdocs/public_html/administration/activ_jour.php, à la ligne 43, le 28/03/2012 à 12:18:44
+<b>Backtrace :</b>
+
+

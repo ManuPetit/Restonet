@@ -1,0 +1,17 @@
+Erreur log   
+
+
+   |  Date:  2012-02-08 05:06:54 -> montant=250&ref=12020000002&auto=XXXXXX&trans=355073494&erreur=00052
+   |  Date:  2012-02-08 05:07:57 -> montant=250&ref=12020052632&auto=XX55XX&trans=355073494&erreur=00052
+   |  Date:  2012-02-08 05:09:25 -> montant=2352&ref=12020000125&auto=XXXXXX&trans=355074676&erreur=00000
+   |  Date:  2012-02-24 10:18:51 -> montant=121&ref=ma_reference_123456&auto=XXXXXX&trans=356297879&erreur=00000
+   |  Date:  2012-02-24 02:42:36 -> auto=XXXXXX&amount=12510&ident=re785855&trans=356318138
+   |  Date:  2012-02-24 02:51:46 -> trans=356318507
+   |  Date:  2012-02-24 02:55:40 -> trans=356319168
+   |  Date:  2012-02-24 03:03:19 -> montant=4325&ref=12020000024&auto=XXXXXX&trans=356319810
+   |  Date:  2012-02-24 03:07:11 -> montant=10100&ref=12020000010&auto=XXXXXX&trans=356320119
+   |  Date:  2012-02-24 03:12:16 -> montant=4300&ref=12020000011&auto=XXXXXX&trans=356320546
+   |  Date:  2012-02-24 03:42:39 -> montant=5600&ref=12020000012&auto=XXXXXX&trans=356323096
+   |  Date:  2012-02-25 12:51:16 -> montant=4450&ref=12020000015&auto=XXXXXX&trans=356374266
+   |  Date:  2012-02-25 12:58:00 -> montant=15000&ref=12020000016&auto=XXXXXX&trans=356374669
+   |  Date:  2012-02-25 12:59:44 -> montant=6300&ref=12020000017&auto=XXXXXX&trans=356374753

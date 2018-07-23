@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+/* Create a bordered box for the form */
+form.login {
+	background-color:#eee;
+	width:300px;
+	padding:10px 20px;
+	border:5px solid #ddd;
+}
+ 
+/* Set the font for all of the elements */
+form.login,
+form.login input,
+form.login button {
+	font-family: Helvetica, Arial;
+	font-size:18px;
+}
+ 
+/* Make our title a bit bigger */
+form.login div.title {
+	font-size:24px;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+ 
+/* Remove the bullets and padding from our list */
+form.login ul {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+ 
+/* Give our input fields a fixed width and a bit of padding */
+form.login input {
+	width:280px;
+	padding:5px;
+	margin-bottom:10px;
+}
+/* Make each field container relative.
+This lets us position the label absolutely inside it. */
+form.login ul li {
+	position:relative;
+}
+ 
+/* Position the labels inside our input fields. */
+form.login label {
+	position:absolute;
+	top:8px;
+	left:9px;
+	color:#aaa;
+}
+</style>
+<script type="text/javascript" src="jquery/jquery-1.6.4.min.js"></script>
+<title>Untitled Document</title>
+
+<script type="text/javascript">
+function FillPass(f){
+	if ((f.username.value != '') && (f.nom.value != ''))
+	{
+		f.password.value = CONCAT(f.username.value.substring(0,3),f.nom.value.substring(0,3));
+	}
+	else if(f.username.value != '')
+	{
+		f.password.value = f.username.value.substring(0,3);
+	}
+	else if (f.nom.value != '')
+	{
+		f.password.value = f.nom.value.substring(0,3);
+	}
+}
+</script>
+</head>
+
+<body>
+<form action="" method="post" class="login">
+<ul>
+	<li>
+		<div class="title">Login</div>
+	</li>
+	<li>
+		<input id="username" name="username" type="text" onblur="FillPass(this.form)">
+	</li>
+    <li>
+		<input id="nom" name="nom" type="text" onblur="FillPass(this.form)">
+	</li>
+	<li>
+		<input id="password" name="password" type="text">
+	</li>
+	<li>
+		<button type="submit">Login</button>
+	</li>
+</ul>
+</form>
+</body>
+</html>

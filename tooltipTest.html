@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<head>
+		<script src="jquery/jquery-1.6.4.min.js"></script>
+		<script src="jquery/jquery-ui-1.8.16.custom.min.js"></script>
+		<link rel="stylesheet" href="styles/jquery-ui-1.8.16.admin.css" />
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.add1').click(function() {
+					var str = '<li><label>Plat : </label><input type="text" value="" name="plat1[]" size="70" maxlength="120"/>&nbsp;&nbsp;';
+					str += '<input type="button" value="Supprimer" class="remove"/>';
+					str += '</li>';
+					$('#sites1').append(str);
+				});
+
+				$('.add2').click(function() {
+					var str = '<li><label>Plat : </label><input type="text" value="" name="plat2[]" size="70" maxlength="120"/>&nbsp;&nbsp;&nbsp;';
+					str += '<input type="button" value="Supprimer" class="remove"/>';
+					str += '</li>';
+					$('#sites2').append(str);
+				});
+
+				$('.add3').click(function() {
+					var str = '<li><label>Plat : </label><input type="text" value="" name="plat3[]" size="70" maxlength="120"/>&nbsp;&nbsp;&nbsp;';
+					str += '<input type="button" value="Supprimer" class="remove"/>';
+					str += '</li>';
+					$('#sites3').append(str);
+				});
+
+				$('.add4').click(function() {
+					var str = '<li><label>Plat : </label><input type="text" value="" name="plat4[]" size="70" maxlength="120"/>&nbsp;&nbsp;&nbsp;';
+					str += '<input type="button" value="Supprimer" class="remove"/>';
+					str += '</li>';
+					$('#sites4').append(str);
+				});
+
+				$('.add5').click(function() {
+					var str = '<li><label>Plat : </label><input type="text" value="" name="plat5[]" size="70" maxlength="120"/>&nbsp;&nbsp;&nbsp;';
+					str += '<input type="button" value="Supprimer" class="remove"/>';
+					str += '</li>';
+					$('#sites5').append(str);
+				});
+
+				$('.remove').live('click', function() {
+					$(this).parent('li').remove();
+				});
+			});
+
+		</script>
+		<title>Test</title>
+	</head>
+	<body>
+		<form action="process.php" method="post">
+			<div id="maincont">
+				<div class="cont1">
+					<fieldset>
+						<legend>
+							<label>Entrez le nom du groupe : </label>
+							<input type="text" name="group[]" maxlength="45" size="30"/>
+						</legend>
+						<ul id="sites1">
+							<li>
+								<label>Plat : </label>
+								<input type="text" value="" name="plat1[]" size="70" maxlength="120"/>
+							</li>
+						</ul>
+						<input type="button" class="add1" value="Ajouter un plat"/>
+					</fieldset>
+				</div>
+				<div class="cont2">
+					<fieldset>
+						<legend>
+							<label>Entrez le nom du groupe : </label>
+							<input type="text" name="group[]" maxlength="45" size="30"/>
+						</legend>
+						<ul id="sites2">
+							<li>
+								<label>Plat : </label>
+								<input type="text" value="" name="plat2[]" size="70" maxlength="120"/>
+							</li>
+						</ul>
+						<input type="button" class="add2" value="Ajouter un plat"/>
+					</fieldset>
+				</div>
+				<div class="cont3">
+					<fieldset>
+						<legend>
+							<label>Entrez le nom du groupe : </label>
+							<input type="text" name="group[]" maxlength="45" size="30"/>
+						</legend>
+						<ul id="sites3">
+							<li>
+								<label>Plat : </label>
+								<input type="text" value="" name="plat3[]" size="70" maxlength="120"/>
+							</li>
+						</ul>
+						<input type="button" class="add3" value="Ajouter un plat"/>
+					</fieldset>
+				</div>
+				<div class="cont4">
+					<fieldset>
+						<legend>
+							<label>Entrez le nom du groupe : </label>
+							<input type="text" name="group[]" maxlength="45" size="30"/>
+						</legend>
+						<ul id="sites4">
+							<li>
+								<label>Plat : </label>
+								<input type="text" value="" name="plat4[]" size="70" maxlength="120"/>
+							</li>
+						</ul>
+						<input type="button" class="add4" value="Ajouter un plat"/>
+					</fieldset>
+				</div>
+				<div class="cont5">
+					<fieldset>
+						<legend>
+							<label>Entrez le nom du groupe : </label>
+							<input type="text" name="group[]" maxlength="45" size="30"/>
+						</legend>
+						<ul id="sites5">
+							<li>
+								<label>Plat : </label>
+								<input type="text" value="" name="plat5[]" size="70" maxlength="120"/>
+							</li>
+						</ul>
+						<input type="button" class="add5" value="Ajouter un plat"/>
+					</fieldset>
+				</div>
+			</div>
+			<br />
+		</form>
+	</body>
+</html>

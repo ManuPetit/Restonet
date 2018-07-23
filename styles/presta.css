@@ -1,0 +1,264 @@
+/* CSS Document */
+/* --- STYLES DE BASE POUR LE TEXTE ET LES PRINCIPAUX ÉLÉMENTS --- */
+
+/* Page */
+html {
+	font-size: 100%; /* Voir -> Note 1 à la fin de la feuille de styles. */
+}
+body {
+	margin: 0;
+	padding: 10px 20px; /* Note -> 2 */
+	font-family: Verdana, "Bitstream Vera Sans", "Lucida Grande", sans-serif; /* 3 */
+	font-size: .8em; /* -> 4 */
+	line-height: 1.25; /* -> 5 */
+	color: black;
+	background: white;
+}
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+	margin: 1em 0 .5em 0; /* -> 6 */
+}
+h1, h2 {
+	font-family: Georgia, "Bitstream Vera Serif", Norasi, serif;
+	font-weight: normal; /* -> 7 */
+}
+h1 {
+	font-size: 3em; /* -> 8 */
+	font-style: italic;
+}
+h2 {
+	font-size: 1.8em;
+}
+h3 {
+	font-size: 1.2em;
+}
+h4 {
+	font-size: 1em;
+}
+/* Listes */
+ul, ol {
+	margin: .75em 0 .75em 24px;
+	padding: 0; /* -> 9 */
+}
+ul {
+	list-style: square;
+}
+li {
+	margin: 0;
+	padding: 0;
+}
+/* Paragraphes */
+p {
+	margin: .75em 0;
+}
+li p, blockquote p {
+	margin: .5em 0;
+}
+/* Citations */
+blockquote, q {
+	font-size: 1.1em;
+	font-style: italic;
+	font-family: Georgia, "Bitstream Vera Serif", Norasi, serif;
+}
+blockquote {
+	margin: .75em 0 .75em 24px;
+}
+cite {
+	font-style: italic;
+}
+/* Divers éléments de type en-ligne */
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+	color: #696969;
+}
+/* --- STYLES POUR CERTAINS CONTENUS DES GABARITS --- */
+
+pre, code {
+	font-size: 100%;
+	font-family: "Bitstream Vera Mono", "Lucida Console", "Courier New", monospace;
+}
+pre {
+	width: 90%;
+	overflow: auto;
+	overflow-y: hidden;
+	margin: .75em 0;
+	padding: 12px;
+	background: #eee;
+	color: #555;
+}
+pre strong {
+	font-weight: normal;
+	color: black;
+}
+#copyright {
+	margin: 20px 0 5px 0;
+	text-align: right;
+	font-size: .8em;
+	color: #a5f0f5;
+}
+#copyright a {
+	color: #a5f0f5;
+	text-decoration: none;
+}
+#copyright a:hover, #copyright a:focus {
+	text-decoration: underline;
+}
+/* --- COULEURS --- */
+
+/* Note: vous pouvez modifier simplement l'aspect de ce gabarit en modifiant
+ uniquement les couleurs de fond (propriétés background) et les couleurs
+ du texte (propriété color).
+ Pour modifier la disposition des blocs, voir plus bas dans la feuille de
+ styles la partie «positionnement». */
+
+/* Général */
+body {
+	color: #a5f0f5;
+	background: #040248;
+}
+strong {
+	color: #05d1de;
+}
+/* Navigation *//*
+ #navigation a {
+ color: #FF6533;
+ }
+ #navigation a:hover, #navigation a:focus, #navigation a.selection {
+ background: #000000;
+ }
+ /* Contenu principal */
+#contenu {
+	color: #040248;
+	background: #a8f3f8;
+}
+#contenu strong {
+	color: #040248;
+}
+/* --- POSITIONNEMENT --- */
+
+/* Page */
+body {
+	padding: 20px 50px; /* Voir -> Note 1 ci-dessous */
+}
+/* En-tête */
+#entete {
+	padding: 20px 0;
+}
+#entete h1 {
+	margin: 0;
+}
+#entete h1 img {
+	float: left;
+	margin: 7px 20px 10px 0;
+}
+#entete .sous-titre {
+	margin: 4px 0 15px 0;
+}
+/* Menu de navigation */
+#navigation {
+	width: 20%;
+	float: left; /* -> 2 */
+}
+/* Contenu */
+#contenu {
+	margin-left: 25%; /* -> 4 */
+	margin-bottom: 20px;
+	padding: 10px 20px;
+}
+#contenu > :first-child {
+	margin-top: 10px;
+}
+#contenu p, #contenu li {
+	line-height: 1.5;
+}
+/* Mention de paternité */
+#copyright {
+	margin-left: 20%;
+}
+a.errpage:active, a.errpage:link, a.errpage:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a.errpage:hover {
+	color: #FF00F0;
+	text-decoration: underline;
+}
+form input.error, textarea.error, select.error {
+	border: 2px double #FF0000;
+}
+.error {
+	color: #FF0000;
+	font-weight: bolder;
+}
+form span.error {
+	font-size: 0.8em;
+}/* CSS Document */
+p.urgent {
+	font-size:16px;
+	font-weight:bolder;
+	color:#FF0000;
+}
+td.urgent {
+	font-size:11px;
+	color:#000000;
+	background:#FAA2A2;
+}
+td.commande {
+	font-size:11px;
+}
+a.livre:active,a.livre:visited,a.livre:link {
+	font-size:10px;
+	padding:5px 10px;
+	margin:5px;
+	border:#0a530c 1px solid;
+	background-color:#74f9b6;
+	color:#0000FF;
+	text-decoration: none;
+}
+a.livre:hover{
+	background-color:#0a530c;
+	color:#74f9b6;
+}
+
+a.livre:active,a.livre:visited,a.livre:link {
+	font-size:10px;
+	padding:2px 5px;
+	margin:5px;
+	border:#0a530c 1px solid;
+	background-color:#74f9b6;
+	color:#0000FF;
+	text-decoration: none;
+}
+a.livre:hover{
+	background-color:#0a530c;
+	color:#74f9b6;
+}
+
+a.cours:active,a.cours:visited,a.cours:link {
+	font-size:10px;
+	padding:2px 5px;
+	margin:5px;
+	border:#601105 1px solid;
+	background-color:#f98774;
+	color:#0000FF;
+	text-decoration: none;
+}
+a.cours:hover{
+	background-color:#601105;
+	color:#f98774;
+}
+td.plan{
+	border:#555555 1px solid;
+	background-color:#FFFFFF;
+	min-height:100px;
+	height:100px;
+}
+td.planOn{
+	border:#FF0000 2px solid;
+	background-color:#FCFC7E;
+	min-height:100px;
+	height:100px;
+}

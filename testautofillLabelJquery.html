@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+/* Create a bordered box for the form */
+form.login {
+	background-color:#eee;
+	width:300px;
+	padding:10px 20px;
+	border:5px solid #ddd;
+}
+ 
+/* Set the font for all of the elements */
+form.login,
+form.login input,
+form.login button {
+	font-family: Helvetica, Arial;
+	font-size:18px;
+}
+ 
+/* Make our title a bit bigger */
+form.login div.title {
+	font-size:24px;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+ 
+/* Remove the bullets and padding from our list */
+form.login ul {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+ 
+/* Give our input fields a fixed width and a bit of padding */
+form.login input {
+	width:280px;
+	padding:5px;
+	margin-bottom:10px;
+}
+/* Make each field container relative.
+This lets us position the label absolutely inside it. */
+form.login ul li {
+	position:relative;
+}
+ 
+/* Position the labels inside our input fields. */
+form.login label {
+	position:absolute;
+	top:8px;
+	left:9px;
+	color:#aaa;
+}
+</style>
+<script type="text/javascript" src="jquery/jquery-1.6.4.min.js"></script>
+<title>Untitled Document</title>
+
+<script type="text/javascript">
+$(document).ready(function(){
+ 
+	// Find each of our input fields
+	var fields = $("form.login input");
+ 
+	// If a field gets focus then hide the label
+	// (which is the previous element in the DOM).
+	fields.focus(function(){
+		$(this).prev().hide();
+	});
+ 
+	// If a field loses focus and nothing has
+	// been entered in the field then show the label.
+	fields.blur(function(){
+		if (!this.value) {
+			$(this).prev().show();
+		}
+	});
+ 
+	// If the form is pre-populated with some values
+	// then immediately hide the corresponding labels. 
+	fields.each(function(){
+		if (this.value) {
+			$(this).prev().hide();
+		}
+	});
+ 
+});
+</script>
+</head>
+
+<body>
+<form action="" method="post" class="login">
+<ul>
+	<li>
+		<div class="title">Login</div>
+	</li>
+	<li>
+		<label for="username">Username</label>
+		<input id="username" type="text">
+	</li>
+	<li>
+		<label for="password">Password</label>
+		<input id="password" type="password">
+	</li>
+	<li>
+		<button type="submit">Login</button>
+	</li>
+</ul>
+</form>
+</body>
+</html>

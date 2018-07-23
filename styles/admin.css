@@ -1,0 +1,385 @@
+/* CSS Document */
+/* --- STYLES DE BASE POUR LE TEXTE ET LES PRINCIPAUX ÉLÉMENTS --- */
+
+/* Page */
+html {
+	font-size: 100%; /* Voir -> Note 1 à la fin de la feuille de styles. */
+}
+body {
+	margin: 0;
+	padding: 10px 20px; /* Note -> 2 */
+	font-family: Verdana, "Bitstream Vera Sans", "Lucida Grande", sans-serif; /* 3 */
+	font-size: .8em; /* -> 4 */
+	line-height: 1.25; /* -> 5 */
+	color: black;
+	background: white;
+}
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+	margin: 1em 0 .5em 0; /* -> 6 */
+}
+h1, h2 {
+	font-family: Georgia, "Bitstream Vera Serif", Norasi, serif;
+	font-weight: normal; /* -> 7 */
+}
+h1 {
+	font-size: 3em; /* -> 8 */
+	font-style: italic;
+}
+h2 {
+	font-size: 1.8em;
+}
+h3 {
+	font-size: 1.2em;
+}
+h4 {
+	font-size: 1em;
+}
+/* Listes */
+ul, ol {
+	margin: .75em 0 .75em 24px;
+	padding: 0; /* -> 9 */
+}
+ul {
+	list-style: square;
+}
+li {
+	margin: 0;
+	padding: 0;
+}
+/* Paragraphes */
+p {
+	margin: .75em 0;
+}
+li p, blockquote p {
+	margin: .5em 0;
+}
+/* Citations */
+blockquote, q {
+	font-size: 1.1em;
+	font-style: italic;
+	font-family: Georgia, "Bitstream Vera Serif", Norasi, serif;
+}
+blockquote {
+	margin: .75em 0 .75em 24px;
+}
+cite {
+	font-style: italic;
+}
+/* Divers éléments de type en-ligne */
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+	color: #696969;
+}
+/* --- STYLES POUR CERTAINS CONTENUS DES GABARITS --- */
+
+pre, code {
+	font-size: 100%;
+	font-family: "Bitstream Vera Mono", "Lucida Console", "Courier New", monospace;
+}
+pre {
+	width: 90%;
+	overflow: auto;
+	overflow-y: hidden;
+	margin: .75em 0;
+	padding: 12px;
+	background: #eee;
+	color: #555;
+}
+pre strong {
+	font-weight: normal;
+	color: black;
+}
+#copyright {
+	margin: 20px 0 5px 0;
+	text-align: right;
+	font-size: .8em;
+	color: #848F63;
+}
+#copyright a {
+	color: #848F63;
+	text-decoration: none;
+}
+#copyright a:hover, #copyright a:focus {
+	text-decoration: underline;
+}
+/* --- COULEURS --- */
+
+/* Note: vous pouvez modifier simplement l'aspect de ce gabarit en modifiant
+ uniquement les couleurs de fond (propriétés background) et les couleurs
+ du texte (propriété color).
+ Pour modifier la disposition des blocs, voir plus bas dans la feuille de
+ styles la partie «positionnement». */
+
+/* Général */
+body {
+	color: #F0E39E;
+	background: #2C2F22;
+}
+strong {
+	color: #A1B55D;
+}
+/* Navigation *//*
+ #navigation a {
+ color: #FF6533;
+ }
+ #navigation a:hover, #navigation a:focus, #navigation a.selection {
+ background: #000000;
+ }
+ /* Contenu principal */
+#contenu {
+	color: #363B29;
+	background: #cbd888;
+}
+#contenu strong {
+	color: #181A12;
+}
+/* --- POSITIONNEMENT --- */
+
+/* Page */
+body {
+	padding: 20px 50px; /* Voir -> Note 1 ci-dessous */
+}
+/* En-tête */
+#entete {
+	padding: 20px 0;
+}
+#entete h1 {
+	margin: 0;
+}
+#entete h1 img {
+	float: left;
+	margin: 7px 20px 10px 0;
+}
+#entete .sous-titre {
+	margin: 4px 0 15px 0;
+}
+/* Menu de navigation */
+#navigation {
+	width: 20%;
+	float: left; /* -> 2 */
+}
+/* Contenu */
+#contenu {
+	margin-left: 25%; /* -> 4 */
+	margin-bottom: 20px;
+	padding: 10px 20px;
+}
+#contenu > :first-child {
+	margin-top: 10px;
+}
+#contenu p, #contenu li {
+	line-height: 1.5;
+}
+/* Mention de paternité */
+#copyright {
+	margin-left: 20%;
+}
+a.errpage:active, a.errpage:link, a.errpage:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a.errpage:hover {
+	color: #FF00F0;
+	text-decoration: underline;
+}
+form input.error, textarea.error, select.error {
+	border: 2px double #800517;
+}
+.error {
+	color: #800517;
+	font-weight: bolder;
+}
+form span.error {
+	font-size: 0.8em;
+}/* CSS Document */
+input.readonly {
+	background-color: #999;
+	color: #033;
+	border-style: none;
+}
+tr.malistehead {
+	background-color: #285c00;
+}
+th.maliste {
+	color: #FFFFFF;
+	font-family: Georgia, "Bitstream Vera Serif", Norasi, serif;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+td.maliste {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+}
+a.maliste:link, a.maliste:active, a.maliste:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	color: #0000ff;
+	text-decoration: none;
+}
+a.maliste:hover {
+	color: #ff00f0;
+}
+th.maliste a:link, th.maliste a:active, th.maliste a:visited{
+	color: #FFFF00;
+	text-decoration: none;
+}
+th.maliste a:hover{
+	color:#b2faf4;
+}
+.bvert {
+	font-family: Georgia;
+	font-size: 1em;
+	color: #9FF63B;
+}
+a.plat:link, a.plat:active, a.plat:visited{
+	color:#0000FF;
+	text-decoration: underline;
+}
+a.plat:hover{
+	color :#e01a0b;
+	text-decoration: none;
+}
+#cmxform label.error {
+	color: #ffff00;
+}
+#cmxform span.error{
+	color:#FFFF00;
+	font-size:12px;
+}
+#cmxform input, #cmxform textarea, #cmxform select {
+	font-size: inherit;
+}
+#cmxform input.error, #cmxform textarea.error, #cmxform select.error {
+	border: 2px double #ff0000;
+	color: #ff0000;
+	font-size: inherit;
+}
+/* Multiselect
+ ----------------------------------*/
+
+.multiselect {
+	width: 600px;
+	height: 200px;
+}
+.ui-multiselect {
+	border: solid 1px;
+	font-size: 0.8em;
+}
+.ui-multiselect ul {
+	-moz-user-select: none;
+}
+.ui-multiselect li {
+	margin: 0;
+	padding: 0;
+	cursor: default;
+	line-height: 20px;
+	height: 20px;
+	font-size: 11px;
+	list-style: none;
+}
+.ui-multiselect li a {
+	color: #999;
+	text-decoration: none;
+	padding: 0;
+	display: block;
+	float: left;
+	cursor: pointer;
+}
+.ui-multiselect li.ui-draggable-dragging {
+	padding-left: 10px;
+}
+.ui-multiselect div.selected {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	float: left;
+}
+.ui-multiselect ul.selected {
+	position: relative;
+	padding: 0;
+	overflow: auto;
+	overflow-x: hidden;
+	background: #fff;
+	margin: 0;
+	list-style: none;
+	border: 0;
+	position: relative;
+	width: 100%;
+}
+.ui-multiselect ul.selected li {
+}
+.ui-multiselect div.available {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	float: left;
+	border-left: 1px solid;
+}
+.ui-multiselect ul.available {
+	position: relative;
+	padding: 0;
+	overflow: auto;
+	overflow-x: hidden;
+	background: #fff;
+	margin: 0;
+	list-style: none;
+	border: 0;
+	border-left:1px #000000 solid; 
+	width: 100%;
+}
+.ui-multiselect ul.available li {
+	padding-left: 10px;
+}
+.ui-multiselect .ui-state-default {
+	border: none;
+	margin-bottom: 1px;
+	position: relative;
+	padding-left: 20px;
+}
+.ui-multiselect .ui-state-hover {
+	border: none;
+}
+.ui-multiselect .ui-widget-header {
+	border: none;
+	font-size: 11px;
+	margin-bottom: 1px;
+}
+.ui-multiselect .add-all {
+	float: right;
+	padding: 7px;
+}
+.ui-multiselect .remove-all {
+	float: right;
+	padding: 7px;
+}
+.ui-multiselect .search {
+	float: left;
+	padding: 4px;
+}
+.ui-multiselect .count {
+	float: left;
+	padding: 7px;
+}
+.ui-multiselect li span.ui-icon-arrowthick-2-n-s {
+	position: absolute;
+	left: 2px;
+}
+.ui-multiselect li a.action {
+	position: absolute;
+	right: 2px;
+	top: 2px;
+}
+.ui-multiselect input.search {
+	height: 14px;
+	padding: 1px;
+	opacity: 0.5;
+	margin: 4px;
+	width: 100px;
+}
